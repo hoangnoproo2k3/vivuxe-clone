@@ -11,7 +11,7 @@
             position: absolute;
             z-index: 100;
             bottom: 16px;
-            right: 40px;
+            right: 18px;
             padding: 6px;
             background-color: #fff;
             border-radius: 8px;
@@ -45,7 +45,7 @@
     &-thumbnails {
         display: flex;
         flex-direction: column;
-        gap: 24px;
+        gap: 8px;
         flex: 1;
 
         .car-image {
