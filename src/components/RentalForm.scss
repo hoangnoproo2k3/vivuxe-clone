@@ -37,10 +37,10 @@
         .date-box {
             flex: 1;
 
-            &:first-child {
-                margin-right: 5px;
-                margin-left: 8px;
-            }
+            // &:first-child {
+            //     margin-right: 5px;
+            //     margin-left: 8px;
+            // }
 
             label {
                 color: #000;
@@ -52,7 +52,8 @@
             }
 
             input {
-                width: 86%;
+                width: 94%;
+                max-width: 160px;
             }
 
             .custom-datetime {
