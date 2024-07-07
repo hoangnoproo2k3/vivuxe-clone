@@ -18,7 +18,12 @@ const CarGallery: React.FC = () => {
                 {images.map((src, index) => (
                     <CarImage key={index} src={src} alt={`Car thumbnail ${index + 1}`} />
                 ))}
+                <div className='seen-more'>
+                    <img src="/images/img.png" alt="" />
+                    <p className='img-more'>Xem tất cả ảnh</p>
+                </div>
             </div>
+
         </div>
     );
 };
