@@ -1,8 +1,18 @@
+import { useState } from 'react';
 import './Content.scss'
 import Features from './Features'
 import RentalForm from './RentalForm'
+import Modal from './Modal';
 const Content = () => {
+    const [showModal, setShowModal] = useState(false);
 
+    const handleOpenModal = () => {
+        setShowModal(true);
+    };
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    };
     return (
         <div className="car-content">
             <div className="car-content-main">
@@ -91,9 +101,10 @@ const Content = () => {
                         <p>Tổng cộng</p>
                         <p>1 100 000đ</p>
                     </div>
-                    <div className='rent'>
+                    <div className="rent" onClick={handleOpenModal}>
                         <p>CHỌN THUÊ</p>
                     </div>
+                    <Modal show={showModal} onClose={handleCloseModal} />
                 </div>
                 <div className="item-info-right">
                     <p className='surcharges'>Phụ phí phát sinh</p>
